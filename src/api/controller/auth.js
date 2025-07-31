@@ -120,7 +120,7 @@ const loginUser = async (req, res) => {
             emails = await getEmails();
 
             if (emails.includes(credentials) == false) {
-                return res.status(409).json({ error: true, message: 'Invalid credentials' });
+                return res.status(409).json({ error: true, message: 'User not found' });
             }
 
             user = await client.query({
@@ -132,7 +132,7 @@ const loginUser = async (req, res) => {
             let users = await getUsernames();
             
             if (users.includes(credentials) == false) {
-                return res.status(409).json({ error: true, message: 'Invalid credentials' });
+                return res.status(409).json({ error: true, message: 'User not found' });
             }
 
             user = await client.query({
