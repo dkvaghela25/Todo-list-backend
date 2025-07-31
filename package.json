@@ -1,0 +1,42 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "This is my first project",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "unittest": "mocha ./src/tests/*.spec.js"
+  },
+  "author": "Divyang Vaghela",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "chai": "^5.2.0",
+    "cloudinary": "^2.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "email-validator": "^2.0.4",
+    "express": "^4.21.2",
+    "express-pino-logger": "^7.0.0",
+    "firebase": "^11.4.0",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "multer": "^1.4.5-lts.1",
+    "password-validator": "^5.3.0",
+    "path": "^0.12.7",
+    "pg": "^8.14.1",
+    "pg-hstore": "^2.3.4",
+    "phone": "^3.1.58",
+    "sequelize": "^6.37.6",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^11.1.0",
+    "mocha-suppress-logs": "^0.5.1",
+    "sequelize-cli": "^6.6.2",
+    "supertest": "^7.0.0"
+  }
+}
