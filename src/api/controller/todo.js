@@ -102,6 +102,7 @@ const showTask = async (req, res) => {
         res.send(tasks.rows)
 
     } catch (err) {
+        console.error("error:", err);
         res.status(err.error_code).json(err.response_data)
     }
 
