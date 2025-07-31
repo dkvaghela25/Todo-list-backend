@@ -4,8 +4,9 @@
   "description": "This is my first project",
   "main": "./src/server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "unittest": "mocha ./src/tests/*.spec.js"
+    "start": "node server.js",
+    "unittest": "mocha ./src/tests/*.spec.js",
+    "dev": "nodemon server.js"
   },
   "author": "Divyang Vaghela",
   "license": "ISC",
